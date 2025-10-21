@@ -1,10 +1,9 @@
-# Create the complete README.md content as a single plain text file
-readme_content = """# Chess
+# Chess
 
 A simple chess game implemented in Python using the Pygame library.
 It features a basic AI that calculates the optimal move by peeking DEPTH moves ahead. The AI assesses positions and scores only.
 
-![Untitled video - Made with Clipchamp](https://github.com/PSAbhinav/chess-ai/assets/98457054/bfdea7e5-502b-4852-a2c9-115ea32e45da)
+![Untitled video - Made with Clipchamp](https://github.com/anuragjain-git/chess/assets/98457054/bfdea7e5-502b-4852-a2c9-115ea32e45da)
 
 ## Introduction
 
@@ -42,15 +41,15 @@ In chess, the en passant rule allows a pawn to capture an opponent's pawn that h
 
 1. **Initial Position:**:
 
-   <img src="https://github.com/PSAbhinav/chess-ai/assets/98457054/1b92957b-1126-4771-8ffb-e3fe7a77b4ca" alt="Chessboard" width="400"/>
+   <img src="https://github.com/anuragjain-git/chess/assets/98457054/1b92957b-1126-4771-8ffb-e3fe7a77b4ca" alt="Chessboard" width="400"/>
 
 2. **Opponent's Move:**
 
-   <img src="https://github.com/PSAbhinav/chess-ai/assets/98457054/bba26e9f-86b2-421b-99b0-a0e7c73a49d9" alt="Chessboard" width="400"/>
+   <img src="https://github.com/anuragjain-git/chess/assets/98457054/bba26e9f-86b2-421b-99b0-a0e7c73a49d9" alt="Chessboard" width="400"/>
 
 3. **En Passant Capture:**
 
-    <img src="https://github.com/PSAbhinav/chess-ai/assets/98457054/d77b5e0c-cd11-41e2-86d1-687267586c63" alt="Chessboard" width="400"/>
+    <img src="https://github.com/anuragjain-git/chess/assets/98457054/d77b5e0c-cd11-41e2-86d1-687267586c63" alt="Chessboard" width="400"/>
 
 ## Pawn Promotion:
 
@@ -58,11 +57,11 @@ In chess, pawn promotion occurs when a pawn reaches the eighth rank. The pawn ca
 
 1. **Reach the Eighth Rank**:
     
-   <img src="https://github.com/PSAbhinav/chess-ai/assets/98457054/9d33967c-6d19-478c-bb23-8737e4325510" alt="Chessboard" width="400"/>
+   <img src="https://github.com/anuragjain-git/chess/assets/98457054/9d33967c-6d19-478c-bb23-8737e4325510" alt="Chessboard" width="400"/>
 
 2. **Select the Promotion Piece**:
 
-   <img src="https://github.com/PSAbhinav/chess-ai/assets/98457054/42fc5e0e-f782-4d55-a454-37c13dd39ffa" alt="Chessboard" width="400"/>
+   <img src="https://github.com/anuragjain-git/chess/assets/98457054/42fc5e0e-f782-4d55-a454-37c13dd39ffa" alt="Chessboard" width="400"/>
 
 ## How to Play
 
@@ -72,25 +71,25 @@ In chess, pawn promotion occurs when a pawn reaches the eighth rank. The pawn ca
    
    ```bash
    pip install pygame
-   ```
 
 3. Run the `main.py` script to start the game.
 
    ```bash
    python main.py
-   ```
 
 **Using Visual Studio Code:**
 
 - Open Visual Studio Code.
+   
 - Click on "File" -> "Open Folder" and select the cloned directory.
+   
 - Open the integrated terminal in Visual Studio Code.
+
 - Run the following command to start the game:
 
-   ```bash
-   python main.py
-   ```
-
+    ```python
+    python main.py
+    
 ## Controls
 
 The controls for the chess game are designed to be intuitive and user-friendly.
@@ -111,25 +110,21 @@ The game will automatically handle the rules of chess, including legal moves, ca
    
    ```bash
    git clone https://github.com/PSAbhinav/chess-ai.git
-   ```
-
+   
 2. Navigate to the project directory:
    
    ```bash
-   cd chess-ai
-   ```
-
+   cd chess
+   
 3. Install dependencies:
    
    ```bash
    pip install -r requirements.txt
-   ```
-
+   
 4. Run the game:
    
    ```bash
    python main.py
-   ```
 
 ## Settings for AI
 
@@ -142,13 +137,11 @@ If you want to play a game where both players are human:
    ```python
    SET_WHITE_AS_BOT = False
    SET_BLACK_AS_BOT = False
-   ```
 
 - To flip the board, go to `engine.py` and set:
 
    ```python
-   self.playerWantsToPlayAsBlack = False
-   ```
+    self.playerWantsToPlayAsBlack = False
 
 ### AI Gameplay:
 
@@ -159,13 +152,11 @@ If you want to play a game with the AI:
    ```python
    SET_WHITE_AS_BOT = True
    SET_BLACK_AS_BOT = False
-   ```
 
 - To flip the board, go to `engine.py` and set:
 
    ```python
-   self.playerWantsToPlayAsBlack = False
-   ```
+    self.playerWantsToPlayAsBlack = False
 
 ### DEPTH:
 
@@ -178,22 +169,12 @@ If you want to modify DEPTH:
 - Open the `chessAi.py` file and modify the following lines:
 
   ```python
-  DEPTH = 3
-  ```
+   DEPTH = 3
 
 ### Acknowledgments:
 
 Special thanks to the Pygame library for providing a straightforward and effective means to develop graphical applications in Python. The ease of use and versatility of Pygame greatly contributed to the creation of this chess engine.
 
-**Contributions and Feedback:**  
-This project is open to contributions from the community. If you have ideas, want to report issues, or suggest improvements, feel free to contribute on GitHub. Your input is valuable in enhancing the overall quality and functionality of this chess engine."""
+**Contributions and Feedback:**
+This project is open to contributions from the community. If you have ideas, want to report issues, or suggest improvements, feel free to contribute on GitHub. Your input is valuable in enhancing the overall quality and functionality of this chess engine.
 
-# Save to a file
-with open('README.md', 'w') as f:
-    f.write(readme_content)
-
-print("README.md file created successfully!")
-print("File size:", len(readme_content), "characters")
-print("\nYou can now download this file or copy the entire content below:")
-print("="*50)
-print(readme_content)
